@@ -7,8 +7,8 @@
 <body>
     <h1>Registro</h1>
     <form id="formRegistro">
-        <label>Nombre: </label>
-        <input id="developer-name" name="name" type="text" data-testid="name-input"> <br><br>
+        <label for="name">Nombre: </label>
+        <input id="name" name="name" type="text" data-testid="name-input"> <br><br>
         <!-- <label>Numero de cuenta: </label>
         <input type="text" id="cuenta" name="cuenta" required /> <br> <br>
         <label>Contraseña: </label>
@@ -23,7 +23,7 @@
       <script>
         document.getElementById('formRegistro').addEventListener('submit', function(event) {
             event.preventDefault(); 
-            var nombre = document.getElementById('developer-name').value;
+            var nombre = document.getElementById('name').value;
             // var cuenta = document.getElementById('cuenta').value;
             // var contrasena = document.getElementById('contrasena').value;
 
@@ -33,7 +33,7 @@
 
             
             
-            document.getElementById('developer-name').value = '';
+            document.getElementById('name').value = '';
             // document.getElementById('cuenta').value = '';
             // document.getElementById('contrasena').value = '';
 
