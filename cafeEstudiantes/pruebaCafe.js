@@ -1,14 +1,16 @@
 import { Selector } from 'testcafe';
 
 
+
 fixture('Getting Started')
-    .page('http://amigohealth.org/control/hiramcafe/')
+    .page('https://github.com/BrizuelaAvalosHIram/pruebaCafe/blob/main/cafeEstudiantes/index.html')
     
 
 test('My first test', async t => {
     await t
-        .wait(1000)
-        .typeText("#developer-name", "John Smith")
+        .typeText("#name", "John Smith")
+        .typeText("#cuenta", "1234567890")
+        .typeText("#contrasena", "hola")
         .click("#submit-button")
         
 });
