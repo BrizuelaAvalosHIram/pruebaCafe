@@ -8,7 +8,7 @@ fixture('Getting Started')
 test('My first test', async t => {
     await t
         .wait(1000)
-        .typeText('#developer-name', 'John Smith')
-        .click('#submit-button')
+        .typeText("#developer-name", "John Smith")
+        .click("#submit-button")
         
 });
