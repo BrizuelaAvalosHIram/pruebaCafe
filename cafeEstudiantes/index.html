@@ -9,33 +9,31 @@
     <form id="formRegistro">
         <label for="name">Nombre: </label>
         <input id="name" name="name" type="text" data-testid="name-input"> <br><br>
-        <!-- <label>Numero de cuenta: </label>
+        <label>Numero de cuenta: </label>
         <input type="text" id="cuenta" name="cuenta" required /> <br> <br>
         <label>Contraseña: </label>
         <input type="text" id="contrasena" name="contrasena" required /><br><br>
-         -->
+        
         <button type="submit" id="submit-button" data-testid="submit-button">Submit</button>
         
-
-       
+        
       </form>
 
       <script>
         document.getElementById('formRegistro').addEventListener('submit', function(event) {
             event.preventDefault(); 
-            var nombre = document.getElementById('name').value;
-            // var cuenta = document.getElementById('cuenta').value;
-            // var contrasena = document.getElementById('contrasena').value;
+            const nombre = document.getElementById('name').value;
+            const cuenta = document.getElementById('cuenta').value;
+            const contrasena = document.getElementById('contrasena').value;
+            
 
             console.log('Nombre:', nombre);
-            // console.log('Número de cuenta:', cuenta);
-            // console.log('Contraseña:', contrasena);
-
-            
+            console.log('Número de cuenta:', cuenta);
+            console.log('Contraseña:', contrasena);
             
             document.getElementById('name').value = '';
-            // document.getElementById('cuenta').value = '';
-            // document.getElementById('contrasena').value = '';
+            document.getElementById('cuenta').value = '';
+            document.getElementById('contrasena').value = '';
 
         });
     </script>
